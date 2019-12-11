@@ -6,7 +6,7 @@
 #    By: hboudhir <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/12/04 16:57:33 by hboudhir          #+#    #+#              #
-#    Updated: 2019/12/11 16:11:45 by hboudhir         ###   ########.fr        #
+#    Updated: 2019/12/11 16:44:33 by hboudhir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -21,6 +21,9 @@ case	$ch1 in
 		ch1='rm'
 		;;
 	*)
+		echo "'$ch1' is an invalid command!"
+		exit 1
+		;;
 esac
 echo -n "Which files would you like to $ch1 : "
 read -e ch2
