@@ -1,4 +1,4 @@
-# Useless_shells
+# Useless_scripts
 Some useless scripts that I made
 
 Cleaner.sh : A stupid script that clears the cache, quite useless unless you're a 42 Network student
