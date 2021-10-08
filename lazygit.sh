@@ -1,14 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    lazygit.sh                                         :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: hboudhir <marvin@42.fr>                    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/12/04 16:57:33 by hboudhir          #+#    #+#              #
-#    Updated: 2019/12/11 16:44:33 by hboudhir         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
 #!/bin/bash
 
 echo -n "Would you like to (a)dd or to (r)emove files? "
@@ -21,7 +10,7 @@ case	$ch1 in
 		ch1='rm'
 		;;
 	*)
-		echo "'$ch1' is an invalid command!"
+		printf "'$ch1' is an invalid option!\nUsage:  a: Adds a file to the remote verison.\n \tr: Deletes a file in the remote version.\n"
 		exit 1
 		;;
 esac
